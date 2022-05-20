@@ -1,7 +1,7 @@
-package com.spring.crud.controller;
+package com.spring.crud.controller.user;
 
-import com.spring.crud.model.User;
-import com.spring.crud.model.UserRepository;
+import com.spring.crud.model.user.User;
+import com.spring.crud.model.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

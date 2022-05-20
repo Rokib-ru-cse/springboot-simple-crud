@@ -7,29 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>[[${pageTitle}]]</title>
+    <title>Document</title>
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <h1 class="text-center py-5">[[${pageTitle}]]</h1>
-            <form method="post" th:action="@{/users}" th:object="${user}">
-                <input type="hidden" th:field="*{id}"/>
+            <h1 class="text-center py-5">Add New Category</h1>
+            <form th:action="@{/categories}" method="post" th:object="${category}">
                 <div class="form-group">
                     <label>Name</label>
-                    <input th:field="*{name}" type="text" class="form-control" placeholder="Enter name">
-                </div>
-                <div class="form-group">
-                    <label>Email address</label>
-                    <input th:field="*{email}" type="email" class="form-control" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input th:field="*{password}" type="password" class="form-control" placeholder="Password">
+                    <input th:field="*{name}" type="text" class="form-control" placeholder="Enter category name"/>
                 </div>
                 <button type="submit" class="btn btn-outline-primary">Submit</button>
-                <a th:href="@{/users}">Go Back</a>
+                <a th:href="@{/categories}">Go Back</a>
             </form>
         </div>
     </div>

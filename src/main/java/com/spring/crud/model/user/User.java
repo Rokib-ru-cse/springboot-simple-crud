@@ -1,4 +1,4 @@
-package com.spring.crud.model;
+package com.spring.crud.model.user;
 
 import javax.persistence.*;
 

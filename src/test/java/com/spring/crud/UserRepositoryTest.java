@@ -1,7 +1,7 @@
 package com.spring.crud;
 
-import com.spring.crud.model.User;
-import com.spring.crud.model.UserRepository;
+import com.spring.crud.model.user.User;
+import com.spring.crud.model.user.UserRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
